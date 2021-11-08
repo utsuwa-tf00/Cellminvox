@@ -412,12 +412,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 410453617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e638de90568145748656d4c595eea9c, type: 3}
+  m_Script: {fileID: 11500000, guid: e385b94a11521144eaaf9b369e4c7dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Cellmin: {fileID: 1044677626}
-  Cellmin2: {fileID: 232273437}
-  Back: {fileID: 2100000, guid: 6bdbc96a69ddaec4e8151bfc12cebb4e, type: 2}
+  Panel: {fileID: 2100000, guid: 6bdbc96a69ddaec4e8151bfc12cebb4e, type: 2}
 --- !u!64 &410453619
 MeshCollider:
   m_ObjectHideFlags: 0
