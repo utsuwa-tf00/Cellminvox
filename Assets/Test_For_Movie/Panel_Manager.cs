@@ -12,6 +12,9 @@ public class Panel_Manager : MonoBehaviour
 
     public Material Panel;
 
+    private Gyroscope m_gyro;
+
+
     /*
     private float Col_R1_S = 0;
     private float Col_G1_S = 106;
@@ -90,7 +93,7 @@ public class Panel_Manager : MonoBehaviour
     void Start()
     {
         Input.gyro.enabled = true;
-        
+
         Vol = Cellmin.GetComponent<Volume>();
         TS = Cellmin.GetComponent<Touch_Script>();
         Gyro = Cellmin.GetComponent<Gyro_Script>();
@@ -161,7 +164,8 @@ public class Panel_Manager : MonoBehaviour
             ColValue = Gyro.gyro_value_x;
         }
 
-        transform.rotation = Quaternion.Euler(-90, Input.gyro.attitude.y, 0);
+        m_gyro = Input.gyro;
+        transform.rotation = Quaternion.Euler(-90, m_gyro.attitude.y, 0);
 
         if(ColValue < 0.5f)
         {
