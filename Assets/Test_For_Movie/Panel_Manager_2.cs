@@ -164,8 +164,11 @@ public class Panel_Manager_2 : MonoBehaviour
             ColValue = Gyro.gyro_value_x;
         }
 
-        m_gyro = Input.gyro;
-        transform.rotation = Quaternion.Euler(-90, 180-m_gyro.attitude.y*180, 0);
+        if(Button_Rotate.Rotate == true)
+        {
+            m_gyro = Input.gyro;
+            transform.rotation = Quaternion.Euler(-90, 180-m_gyro.attitude.y*180, 0);
+        }
 
         if(ColValue < 0.5f)
         {
