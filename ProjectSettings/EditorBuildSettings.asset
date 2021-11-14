@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Test_For_Movie/Test_Play.unity
     guid: c5a72636c6846f343b98bf40da167486
+  - enabled: 1
+    path: Assets/Test_For_Movie/Test_Play_SymbolPattern.unity
+    guid: 12e4fd34bccf7964d856016afb265df5
   m_configObjects: {}
