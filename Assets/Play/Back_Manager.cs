@@ -86,7 +86,6 @@ public class Back_Manager : MonoBehaviour
 
 
     private int wave;
-    private float move;
 
     // Start is called before the first frame update
     void Start()
@@ -104,7 +103,6 @@ public class Back_Manager : MonoBehaviour
         
         if(PS.wave_name == "sin"){
             wave = 0;
-            move = 2;
             /*
             Col_R_S = Col_R1_S;
             Col_G_S = Col_G1_S;
@@ -116,7 +114,6 @@ public class Back_Manager : MonoBehaviour
         }
         else if(PS.wave_name == "square"){
             wave = 1;
-            move = 2;
             /*
             Col_R_S = Col_R2_S;
             Col_G_S = Col_G2_S;
@@ -128,7 +125,6 @@ public class Back_Manager : MonoBehaviour
         }
         else if(PS.wave_name == "triangle"){
             wave = 2;
-            move = 2;
             /*
             Col_R_S = Col_R3_S;
             Col_G_S = Col_G3_S;
@@ -140,7 +136,6 @@ public class Back_Manager : MonoBehaviour
         }
         else if(PS.wave_name == "saw"){
             wave = 3;
-            move = 2;
             /*
             Col_R_S = Col_R4_S;
             Col_G_S = Col_G4_S;
@@ -260,7 +255,6 @@ public class Back_Manager : MonoBehaviour
         Back.SetFloat("_B",Col_B);
         Back.SetFloat("_Volume",Vol.volume);
         Back.SetFloat("_Light",Col_Light);
-        Back.SetFloat("_MoveSpeed",move);
         Back.SetInt("_PlayState",wave);
     }
 }
