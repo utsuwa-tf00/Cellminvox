@@ -9,13 +9,7 @@ public class ButtonScript : MonoBehaviour
 
     public void OnClick()
     {
-        if(Button_SymbolPattern.SymbolPattern == false)
-        {
-            SceneManager.LoadScene("Test_Play");
-        }
-        else
-        {
-            SceneManager.LoadScene("Test_Play_SymbolPattern");
-        }
+        if(Button_SymbolPattern.SymbolPattern == false) SceneManager.LoadScene("Test_Play");
+        else SceneManager.LoadScene("Test_Play_SymbolPattern");
     }
 }

@@ -7,17 +7,16 @@ public class Button_AutoPitch : MonoBehaviour
 {
     public Text AutoPitch;
 
+    public void Start()
+    {
+        AutoPitch.text = $"auto pitch : {Setting_GM.auto_pich}";
+    }
+
     public void OnClick()
     {
-        if(Setting_GM.auto_pich == true)
-        {
-            Setting_GM.auto_pich = false;
-            AutoPitch.text = "auto pitch : false";
-        }
-        else 
-        {
-            Setting_GM.auto_pich = true;
-            AutoPitch.text = "auto pitch : true";
-        }
+        if(Setting_GM.auto_pich == true) Setting_GM.auto_pich = false;
+        else Setting_GM.auto_pich = true;
+
+        AutoPitch.text = $"auto pitch : {Setting_GM.auto_pich}";
     }
 }

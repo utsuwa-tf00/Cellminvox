@@ -9,7 +9,7 @@ public class Button_Wave : MonoBehaviour
 
     public void Start()
     {
-        Wave.text = "wave : " + Setting_GM.change_wave;
+        Wave.text = $"wave : {Setting_GM.change_wave}";
     }
     public void OnClick()
     {
@@ -18,6 +18,6 @@ public class Button_Wave : MonoBehaviour
         else if(Setting_GM.change_wave == "triangle") Setting_GM.change_wave = "saw";
         else if(Setting_GM.change_wave == "saw") Setting_GM.change_wave = "sin";
 
-        Wave.text = "wave : " + Setting_GM.change_wave;
+        Wave.text = $"wave : {Setting_GM.change_wave}";
     }
 }

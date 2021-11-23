@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: back
-  m_Shader: {fileID: 4800000, guid: b543f6efeb74b4910964167268c86b15, type: 3}
+  m_Name: quad_Test
+  m_Shader: {fileID: 4800000, guid: f0efb70b8a1dc0c4e8aec7be00119c4c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -57,34 +57,33 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _B: 0.054222602
-    - _Brightness: 0.956
+    - _B: 0.05344892
+    - _Brightness: 0.5
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _G: 0.054222602
+    - _G: 0.05344892
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Light: 0.057976022
+    - _Light: 0.056514625
     - _Metallic: 0
     - _Mode: 0
     - _MoveSpeed: 2
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _PlayState: 0
-    - _R: 0.054222602
-    - _Range: 1
+    - _R: 0.05344892
+    - _Range: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _SquareNum: 10
+    - _SquareNum: 5
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Volume: 0.009383556
+    - _Volume: 0.0076642632
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color0: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

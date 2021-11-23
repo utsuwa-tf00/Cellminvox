@@ -1,7 +1,9 @@
-Shader "Unlit/Panel"
+Shader "Unlit/quad_Test"
 {
     Properties
     {
+        _MainTex ("Texture", 2D) = "white" {}
+
         _SquareNum ("SquareNum", int) = 10
         _Brightness ("Brightness", Range(0.0, 1.0)) = 0.5
         _Volume("Volume",Range(0.0, 1.0))= 0.0
@@ -25,9 +27,12 @@ Shader "Unlit/Panel"
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
+            // make fog work
+            #pragma multi_compile_fog
 
             #include "UnityCG.cginc"
 
+            int _SquareNum;
             float _Brightness;
             float _Volume;
             float _MoveSpeed;
@@ -70,7 +75,22 @@ Shader "Unlit/Panel"
                 _Color.g = _G;
                 _Color.b = _B;
 
-                return _Color;
+                float n = _SquareNum;
+                float2 st = frac(i.uv * n);
+
+                float d = distance(float2(0.5, 0.5), st);
+                d = d*(25*_Volume);
+                d = abs(sin(d + _Time.y * 10));
+                
+                if(d > 0.7)
+                    {
+                        return _Color;
+                    }
+                    else
+                    {
+                        return _Light;
+                    }
+                
             }
             ENDCG
         }

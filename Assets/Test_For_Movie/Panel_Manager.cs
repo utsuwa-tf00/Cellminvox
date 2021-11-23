@@ -12,7 +12,7 @@ public class Panel_Manager : MonoBehaviour
 
     public Material Panel;
 
-    private Gyroscope m_gyro;
+    //private Gyroscope m_gyro;
 
 
     /*
@@ -42,7 +42,7 @@ public class Panel_Manager : MonoBehaviour
     private float Col_B4_E = 99;
     */
 
-    private float ColValue;
+    public float ColValue;
 
     private float col_val_R1 = 0;
     private float col_val_G1 = 153;
@@ -92,12 +92,14 @@ public class Panel_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Input.gyro.enabled = true;
+        //Input.gyro.enabled = true;
 
         Vol = Cellmin.GetComponent<Volume>();
         TS = Cellmin.GetComponent<Touch_Script>();
         Gyro = Cellmin.GetComponent<Gyro_Script>();
         PS = Cellmin.GetComponent<PlayState>();
+
+        Panel.SetInt("_SquareNum",Button_Split.Split);
     }
 
     // Update is called once per frame
@@ -163,12 +165,14 @@ public class Panel_Manager : MonoBehaviour
         {
             ColValue = Gyro.gyro_value_x;
         }
-
+        
+        /*
         if(Button_Rotate.Rotate == true)
         {
             m_gyro = Input.gyro;
             transform.rotation = Quaternion.Euler(-90, -m_gyro.attitude.y*180, 0);
         }
+        */
 
         if(ColValue < 0.5f)
         {

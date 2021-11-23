@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1643,7 +1643,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'rotate : false'
+  m_Text: 'split : 1'
 --- !u!222 &1381807744
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2000,7 +2000,7 @@ GameObject:
   - component: {fileID: 1827650082}
   - component: {fileID: 1827650081}
   m_Layer: 5
-  m_Name: Rotate
+  m_Name: Split
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2035,10 +2035,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1827650079}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4018623739de0e4095852913e136821, type: 3}
+  m_Script: {fileID: 11500000, guid: f40625f05ea89ac46bc10a0e0680ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rotate_Text: {fileID: 1381807743}
+  Split_Text: {fileID: 1381807743}
 --- !u!114 &1827650082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2084,7 +2084,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1827650081}
-        m_TargetAssemblyTypeName: Button_Rotate, Assembly-CSharp
+        m_TargetAssemblyTypeName: Button_Split, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
