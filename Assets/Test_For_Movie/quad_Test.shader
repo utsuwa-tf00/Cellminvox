@@ -80,7 +80,7 @@ Shader "Unlit/quad_Test"
 
                 float d = distance(float2(0.5, 0.5), st);
                 d = d*(25*_Volume);
-                d = abs(sin(d + _Time.y * 10));
+                d = abs(sin(d - _Time.y * 10));
                 
                 if(d > 0.7)
                     {
