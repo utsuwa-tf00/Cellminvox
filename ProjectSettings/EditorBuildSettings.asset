@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Test_Setting/Test_Setting.unity
-    guid: 496080d18b9f7714cabd4619f4254fef
+    path: Assets/Title/Title.unity
+    guid: 08c5914c633664fb8a8ff45a7fa8dac1
   - enabled: 1
-    path: Assets/Test_For_Movie/Test_Play.unity
-    guid: c5a72636c6846f343b98bf40da167486
+    path: Assets/Setting/Setting.unity
+    guid: ffee9a2dab2174e56a70ca0aa64504d4
   - enabled: 1
-    path: Assets/Test_For_Movie/Test_Play_SymbolPattern.unity
-    guid: 12e4fd34bccf7964d856016afb265df5
+    path: Assets/Tutorial/Tutorial.unity
+    guid: e0ed7573bfbf24987a63427b50d4b04f
+  - enabled: 1
+    path: Assets/Play/Play.unity
+    guid: 4da8020c2a16347ac9d67333f71c64a9
   m_configObjects: {}

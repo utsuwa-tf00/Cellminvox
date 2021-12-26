@@ -78,8 +78,8 @@ Material:
     - _WaveFormValue: 50
     - _Weight: 0.1
     - _ZWrite: 1
-    - _posX: 0.90000033
-    - _posY: 0.84999967
+    - _posX: 0.8999978
+    - _posY: 0.100000046
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 0.9, g: 0.9, b: 0.9, a: 1}

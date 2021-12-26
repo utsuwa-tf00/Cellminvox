@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Button_WaveChange : MonoBehaviour
+public class Button_Double : MonoBehaviour
 {
-    public Text WaveChange;
+    public Text Double;
 
     public void Start()
     {
-        WaveChange.text = $"No change : {Setting_GM.wave_change}";
+        Double.text = $"Double : {Setting_GM.wave_change}";
     }
 
     public void OnClick()
@@ -17,6 +17,6 @@ public class Button_WaveChange : MonoBehaviour
         if(Setting_GM.wave_change == true) Setting_GM.wave_change = false;
         else Setting_GM.wave_change = true;
 
-        WaveChange.text = $"No change : {Setting_GM.wave_change}";
+        Double.text = $"Double : {Setting_GM.wave_change}";
     }
 }

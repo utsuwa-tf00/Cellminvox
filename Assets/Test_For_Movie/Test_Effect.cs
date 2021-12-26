@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PostEffect : MonoBehaviour
+public class Test_Effect : MonoBehaviour
 {
     public Material RadialBlur;
     public Material mosaic;
@@ -69,29 +69,21 @@ public class PostEffect : MonoBehaviour
 
     void OnRenderImage(RenderTexture src, RenderTexture dest)
     {
-        if(multiphonic)
+        if(wave == "sin")
         {
-            if(wave == "sin")
-            {
-                Graphics.Blit(src, dest,RadialBlur);
-            }
-            else if(wave == "square")
-            {
-                Graphics.Blit(src, dest, mosaic);
-            }
-            else if(wave == "triangle")
-            {
-                Graphics.Blit(src, dest, ChromaticAberration);
-            }
-            else if(wave == "saw")
-            {
-                Graphics.Blit(src, dest, Nausea);
-            }
-            
+            Graphics.Blit(src, dest,RadialBlur);
         }
-        else
+        else if(wave == "square")
         {
-            Graphics.Blit(src, dest);
+            Graphics.Blit(src, dest, mosaic);
+        }
+        else if(wave == "triangle")
+        {
+            Graphics.Blit(src, dest, ChromaticAberration);
+        }
+        else if(wave == "saw")
+        {
+            Graphics.Blit(src, dest, Nausea);
         }
     }
 }

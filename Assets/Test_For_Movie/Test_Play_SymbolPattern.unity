@@ -808,7 +808,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 390305649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88430fb8b2d584c61855d18f1b864cf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d28eb4cdc0d443cabbdebeba2d60952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   RadialBlur: {fileID: 2100000, guid: 00aebf5d8e9944d1ebed1dd3c60496e4, type: 2}
@@ -845,7 +845,7 @@ Camera:
   field of view: 60
   orthographic: 1
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967240
@@ -1003,12 +1003,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 513679709}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e638de90568145748656d4c595eea9c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d6f83d7a4a9e438399924df5bae4225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Cellmin: {fileID: 75723928}
   Cellmin2: {fileID: 788622179}
   Back: {fileID: 2100000, guid: 1bf4419d10d2a4d3fa505ace7cdc9299, type: 2}
+  Col_Light_Min: 0.9
+  Col_Light_Max: 0.9
 --- !u!64 &513679711
 MeshCollider:
   m_ObjectHideFlags: 0

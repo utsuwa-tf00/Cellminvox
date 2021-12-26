@@ -272,6 +272,8 @@ MonoBehaviour:
   longtone_volume: 0
   back: 0
   rotate: 0
+  SwipeModeValue: 0
+  SwipeToFreq: 0
 --- !u!114 &232273440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1107,6 +1109,8 @@ MonoBehaviour:
   longtone_volume: 0
   back: 0
   rotate: 0
+  SwipeModeValue: 0
+  SwipeToFreq: 0
 --- !u!4 &1415934085
 Transform:
   m_ObjectHideFlags: 0
@@ -1586,6 +1590,7 @@ MonoBehaviour:
   range: 0
   auto_pich: 0
   freq: 0
+  FreqValue: 0
 --- !u!82 &1683635617
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1735,6 +1740,8 @@ MonoBehaviour:
   longtone_volume: 0
   back: 0
   rotate: 0
+  SwipeModeValue: 0
+  SwipeToFreq: 0
 --- !u!114 &1683635620
 MonoBehaviour:
   m_ObjectHideFlags: 0
